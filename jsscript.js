@@ -114,10 +114,10 @@ const sideBar = document.querySelector('.sidebar');
 const sideClose = document.getElementById('side-close')
 
 barIcon.addEventListener('click',function(){
-    sideBar.style.top = "0"
+    sideBar.style.right = "0"
 })
 sideClose.addEventListener('click',function(){
-    sideBar.style.top = "-120%"
+    sideBar.style.right = "-120%"
 })
 
 
@@ -125,13 +125,22 @@ sideClose.addEventListener('click',function(){
 // Show Overlay 
 // Get elements
 const trailerButton = document.getElementById('trailerButton');
+const trailerBtn = document.getElementById('trailerButton1');
 const overlay = document.getElementById('overlay');
 const closeButton = document.getElementById('closeButton');
 const trailerVideo = document.getElementById('trailerVideo');
-const videoCont = document.querySelector('.video-container')
+const videoCont = document.querySelector('.video-container');
 
 // Open the overlay when the trailer button is clicked
-const trailerBtn = document.getElementById('trailerButton1');
+
+trailerButton.addEventListener('click', function(){
+    overlay.style.display = 'inline';
+    closeButton.style.display = "inline";
+    videoCont.style.display = 'inline';
+    videoCont.style.transition = "opacity 0.5s ease";
+
+});
+
 trailerBtn.addEventListener('click', function(){
     overlay.style.display = 'inline';
     closeButton.style.display = "inline";
