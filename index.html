@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/signup.css">
+        <link rel="stylesheet" href="CSS/mediaquery.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="icon" href="Movie Images/Flim Freaks Logo HD.png">
+        <title>Film Freaks</title>
+
+    </head>
+
+    <body>
+        <!-- Overlay Trailer -->
+
+        <div id="overlay" class="overlay"></div>
+
+        <!-- Close Button -->
+        <span id="closeButton" class="close-btn">&times;</span>
+
+        <!-- YouTube Video -->
+        <div class="video-container">
+          
+            <iframe id="trailerVideo" width="1349" height="480" src="https://www.youtube.com/embed/mb2187ZQtBE" title="IF | Final Trailer (2024 Movie) - Ryan Reynolds, John Krasinski, Steve Carell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         
+        </div>
+
+     <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="Movie Images/Flim Freaks Logo HD.png" alt="">
+                <h2>FilmFreaks</h2>
+                <i class="fa-solid fa-video" style="color: #FFD43B;"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li class="s-srn"><a href="Movies And TV Shows/html/index.html">Movies & TV Shows</a></li>                    
+                    <li class="s-srn"><a href="#">Critics Forum</a></li>
+                    <li class="s-srn"><a href="#">Contact Us</a></li>                    
+                    <li class="s-srn">
+                        <i class="fa-regular fa-square-minus fa-beat-fade" style="color: #FFD43B;"></i>
+
+                    </li>                    
+                    <li><a href="#" id="login-btn">Login</a></li>
+                    <li><a href="#" id="signup-btn">SignUp</a></li>
+                    <li class="bar-icon"><i class="fa-solid fa-bars"></i></li>
+                    <li class="login-id" id="yuva">Y</li>
+                    <li class="login-id" id="aravind">A</Li>
+                </ul>                
+            </nav>
+            <div class="sidebar">
+                    <span id="side-close" class="side-close-btn">&times;</span>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-film"></i> Movies & TV Shows</a></li>                
+                    <li><a style="padding-right: 55px;" href="#"><i class="fa-brands fa-wpforms"></i> Critics Forum</a></li>
+                    <li><a style="padding-right: 70px;" href="#"><i class="fa-regular fa-address-book"></i> Contact Us</a></li>
+                    <li><a style="padding-right: 89px;" href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                    <li><a style="padding-right: 95px;" href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>                    
+                </ul>
+            </div>
+        </header>
+        <!--Banner-->
+        <div class="banner">
+            <!--Add Swiper-->
+            <div class="swiper bannerSwiper">
+                <!--Additional Required Wrapper-->
+                <div class="swiper-wrapper">
+                    <!--Slides-->
+                    <div class="swiper-slide">
+                        <img class="DT-img" src="Movie Images/IF Wallpaper.jpg" alt="IF Wallpaper">
+                        <img class="Mbl-img" src="Movie Images/if-mobile-2160x3840.jpg" alt="IF Poster">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="DT-img" src="Movie Images/Abigail-wall paper.jpg" alt="Abigail Wallpaper">
+                        <img class="Mbl-img" src="Movie Images/abigail-mobile.jpg" alt="Abigail Poster">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="DT-img" src="Movie Images/Nun II -wallpaper.jpg" alt="The-nun-2 Wallpaper">
+                        <img class="Mbl-img" src="Movie Images/the-nun-2mobile.jpg" alt="The-Nun Poster">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="DT-img" src="Movie Images/Bad Boys Wallpaper.jpg" alt="Bad Boys Wallpaper">
+                        <img class="Mbl-img" src="Movie Images/bad-boys-ride-or-die-mobile.jpg" alt="Bad Boys Poster">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="DT-img" src="Movie Images/Prey-wallpaper.jpg" alt="Prey Wallpaper">
+                        <img class="Mbl-img" src="Movie Images/prey-thumb.jpg" alt="Prey Poster">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="DT-img" src="Movie Images/Jurasic World-wallpaper.jpg" alt="Jurrasic World Wallpaper">
+                        <img class="Mbl-img" src="Movie Images/Jurasic World--thump.jpg" alt="Jurasic World Poster">
+                    </div>
+                </div>                                
+        
+            </div>
+        </div>
+        <!--Content-->
+        <div class="content">
+            <div class="title">
+                <div id="title">
+                    <h1 id="movie-title"></h1>
+                </div>
+                <div id="sub-title">
+                    <p id="movie-sub-title"></p>
+                </div>
+                <!-- <div class="desc-mobile" id="desc">
+                <p id="movie-desc"></p>
+                </div> -->
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <!-- <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star" style="margin-left: 10px;"></i> -->
+                    <h3 id="movie-rating"></h3><span>/10</span>                    
+                </div>
+                <div class="mobile-buttons">
+                    <buttons id="trailerButton" class="btn-sec">
+                        <i class="fa-solid fa-play"></i>
+                        Play Trailer
+                    </buttons>
+                    <buttons class="btn-sec">
+                        <i class="fa-solid fa-users"></i>
+                        Reviews
+                    </buttons>
+                </div>
+            </div>
+            <div class="descp">
+             <!--Swiper Navigation Button-->
+             <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+             </div>
+             <!--Movie Desc-->
+             <div id="desc">
+                <p id="movie-desc"></p>
+             </div>
+             <div class="buttons">
+                <buttons id="trailerButton1" class="btn-sec">
+                    <i class="fa-solid fa-play"></i>
+                    Play Trailer
+                </buttons>
+                <buttons class="btn-sec">
+                    <i class="fa-solid fa-users"></i>
+                    Reviews
+                </buttons>
+                <button class="btn-primary">
+                    <i class="fa-solid fa-ticket fa-shake" style="color: #000000;"></i>
+                    <a href="https://www.pvrcinemas.com/" target="_blank">Book A Movie</a>
+                </button>
+            </div>
+             <!-- <div class="container">
+                <button class="btn-primary">
+                    <i class="fa-solid fa-ticket fa-shake" style="color: #000000;"></i>
+                    <a href="https://www.pvrcinemas.com/" target="_blank">Book A Movie</a>
+                </button>
+            </div> -->
+            <!--Swiper Pagination-->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!--Thumbnails-->
+
+        <div class="thumbs">
+            <div class="thumbs-content">
+                <h1>#Most Watched</h1>
+            </div>
+            <div class="thumbnail">
+                <div class="moive-poster">
+                    <img src="Movie Images/if-mobile-2160x3840.jpg" alt="IF Poster">
+                </div>
+                <div class="moive-poster">
+                    <img src="Movie Images/abigail-mobile.jpg" alt="Abigail Poster">
+                </div>
+                <div class="moive-poster">
+                    <img src="Movie Images/the-nun-2mobile.jpg" alt="The-Nun Poster">
+                </div>
+                <div class="moive-poster">
+                    <img src="Movie Images/Bad Boys Poster.jpeg" alt="Bad Boys Poster">
+                </div>
+                <div class="moive-poster">
+                    <img src="Movie Images/prey-thumb.jpg" alt="Prey Poster">
+                </div>
+                <div class="moive-poster">
+                    <img src="Movie Images/Jurasic World--thump.jpg" alt="Jurasic World Poster">
+                </div>
+            </div>     
+            
+            <div class="newsletter-container">
+                <h2 class="newsletter-header">Subscribe to Our Newsletter</h2>
+              <input type="email" class="email-input" placeholder="Enter your email">
+               <button class="subscribe-btn">Subscribe</button>
+            </div>       
+        </div>
+
+        <!-- Login Page -->
+        <div id="popup-success">Successfully logged in...</div>
+        <div id="popup-invalid">Invalid login Credentials...</div>
+
+        <div id="overlay1" class="overlay1"></div>
+        <span id="closeButton1" class="close-btn1">&times;</span>
+
+        <div class="box" id="box1">
+            <h1>WELCOME BACK</h1>
+            
+            <label for="U-name">
+                <input type="mail" placeholder="Enter Mail ID" class="U-name inp" id="mail-inp">
+            </label>
+            <!-- <br>
+            <br>
+            <br> -->
+            <label for="password">
+                <input type="password" placeholder="Enter Password" class="password inp" id="pass-inp">
+            </label>
+            <!-- <br>
+            <br>
+            <br> -->
+            <input type="checkbox">
+            <label for="c-box" style="color: black;">Remember</label>
+            <span class="for-pass"><a href="#">Forgot password?</a></span>
+            <!-- <br>
+            <br> -->
+            <input type="submit" class="inp" id="submit-btn">
+            <!-- <br><br> -->
+            <p class="c-acc">Not a member? <span><a style="text-decoration: underline;" id="c-account" href="#">Create Account</a></span></p>
+        </div>
+        
+        <div class="box" id="box2">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="assets/Poster/Pirates of caribbean .curseofblackpearl.webp" alt=""></div>
+                    <div class="slide"><img src="assets/Poster/Horry potter.webp" alt=""></div>
+                    <div class="slide"><img src="assets/Poster/Dark Knight.webp" alt=""></div>
+                    <div class="slide"><img src="assets/Poster/Dark Knight 1.webp" alt=""></div>
+                    <div class="slide"><img src="assets/Poster/Sky Fall.webp" alt=""></div>
+                    <div class="slide"><img src="assets/Poster/Sky Fall.webp" alt=""></div>                
+                    <div class="slide"><img src="assets/Poster/Horry potter.webp" alt=""></div>
+                                    
+                </div>
+            </div>            
+        </div>
+
+        <!-- SignUp Page -->
+        <div id="overlay2" class="overlay2"></div>
+        <span id="closeButton2" class="close-btn2">&times;</span>
+        <div class="form_wrapper">
+            <div class="form_container">
+              <div class="title_container">
+                <img class="signup-logo" src="Movie Images/Flim Freaks Logo HD.png" alt="logo">
+                <!-- <h2>Responsive Registration Form</h2> -->
+              </div>
+              <div class="row clearfix">
+                <div class="">
+                  <form>
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                      <input type="email" name="email" placeholder="Email" required />
+                    </div>
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                      <input type="password" name="password" placeholder="Password" required />
+                    </div>
+                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                      <input type="password" name="password" placeholder="Re-type Password" required />
+                    </div>
+                    <div class="row clearfix">
+                      <div class="col_half">
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                          <input type="text" name="name" placeholder="First Name" required/>
+                        </div>
+                      </div>
+                      <div class="col_half">
+                        <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                          <input type="text" name="name" placeholder="Last Name" required />
+                        </div>
+                      </div>
+                    </div>
+                          <div class="input_field radio_option">
+                        <input type="radio" name="radiogroup1" id="rd1">
+                        <label for="rd1" class="rd-cb-text">Male</label>
+                        <input type="radio" name="radiogroup1" id="rd2">
+                        <label for="rd2" class="rd-cb-text">Female</label>
+                        </div>
+                        <div class="input_field select_option">
+                          <select>
+                            <option>Select a country</option>
+                            <option>India</option>
+                            <option>Others</option>
+                          </select>
+                          <div class="select_arrow"></div>
+                        </div>
+                      <div class="input_field checkbox_option">
+                          <input type="checkbox" id="cb1">
+                          <label for="cb1" class="rd-cb-text">I agree with terms and conditions</label>
+                      </div>
+                      <div class="input_field checkbox_option">
+                          <input type="checkbox" id="cb2">
+                          <label for="cb2" class="rd-cb-text">I want to receive the newsletter</label>
+                      </div>
+                    <input class="button" type="submit" value="Register" />
+                    <br>
+                    <p class="credit">Are you <a id="al-member" href="#">already a member</a></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        <script type="text/javascript" src="./jsscript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--Swiper JS-->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!--Ion Icons-->
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> <!--Ion Icons-->
+        
+
+    </body>
+</html>

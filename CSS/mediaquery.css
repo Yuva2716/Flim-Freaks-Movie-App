@@ -1,0 +1,182 @@
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+    /* Nav bar  */
+    .logo h2{
+        font-size: 1.2rem;
+        display: none;
+    }
+    .logo i{
+        font-size: 1.3rem;
+        position: absolute;
+        left: 2%;
+        top: 3%;
+        display: none;
+    }
+
+    nav ul .s-srn{
+        display: none;
+    }
+    nav ul .bar-icon{
+        display: block;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .logo img{                
+        display: block;
+        margin-right: 30px;
+    }
+
+    .login-id{
+        right: 15%;
+        top: 3%;
+    }
+
+    .sidebar{
+        display: flex;
+    }
+    /* Background Banner */
+    .banner{
+        width: 150vw;
+        height: 160vh;        
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;     
+    }
+    .swiper-slide img{
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide .DT-img{
+    display: none;
+    }
+
+    .Mbl-img{
+        display: block;
+    }
+
+    
+
+
+    /* Contents like Tile subtitle desc and rating */
+
+    .content{
+        flex-direction: column;
+        
+    }
+
+    .title{
+        width: 100vw;
+        margin-right: 10%;
+    }
+
+    #title{
+        width: 100%;        
+    }
+
+    #title h1{
+        font-size: 2.5rem;
+    }
+
+    .descp{                
+        width: 100vw;
+        position: relative;
+
+    }
+
+    
+    #desc{    
+        width: 100%;
+        padding: 10px 10px;
+        line-height: 25px;
+        font-size: 1.2rem;         
+        margin-left: -10%;
+        
+    }
+
+    .mobile-buttons{
+        display: block;
+        margin-top: 4%;
+    }
+    .buttons .btn-sec{
+        display: none;
+    }
+
+    /* .buttons{
+        margin-left: -1%;
+
+    } */
+    .btn-primary{
+        margin-left: 2%;
+    }
+    
+
+    .arrows{
+        position: fixed;
+        width: 100%;                
+        top: 15%;
+        right: 1%;
+    }
+
+    .thumbs{
+        display: none;
+    }
+
+    .close-btn{
+        /* position: absolute; */
+        top: 0;
+        left: 90%;
+    }
+
+
+    /* Login page */
+    
+    .overlay1{
+        margin-top: -23%;
+        height: 160vh;        
+    }
+    .close-btn1{
+        
+        top: 10%;
+        left: 90%;
+    }
+    
+    .box{
+        left: 1%;
+    }
+    
+    #box1{
+        /* z-index: 110; */
+        width: 90%;        
+        border-radius: 10px;
+    }
+
+    #box2{
+        z-index: 1;
+    }
+
+    .inp{
+        margin-right: 20px;
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+    .c-box{
+        display: block;
+    }
+    .for-pass{
+        margin-left: 5px;
+    }
+    #submit-btn{        
+        margin-top: 20px;
+        padding: 10px 95px;
+    }
+    #popup-invalid{
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        text-align: center;
+
+    }
+}

@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="icon" href="../Images/Flim Freaks Logo HD.png">
+    <title>Movies & TV Shows</title>
+</head>
+<body>
+
+
+     <!-- Header -->
+     <header class="header">
+        <div class="logo">
+            <!-- <img src="Movie Images/Flim Freaks Logo HD.png" alt=""> -->
+            <a href="">FilmFreaks</a>
+            <i class="fa-solid fa-video" style="color: #050505;"></i>
+        </div>
+        <nav>
+            <ul>
+                <div class="back-button">
+                    <ion-icon name="play-skip-back-circle-outline"></ion-icon>
+                    <div id="tooltip"></div>
+                </div>
+                <form class="search-form">
+                    <input class="inp-text" type="text" placeholder="Movies and Tv Shows" aria-label="Search" required>
+                    <button class="search" type="submit">Search</button>
+                </form>     
+                <li class="login-id" id="yuva">Y</li>
+                <li class="dropdown">
+                    <i class="fa-regular fa-square-minus fa-beat-fade" style="color: #050505;"></i>
+                    <ul class="dropdown-content">
+                        <li><a href="#" id="login-btn">Login</a></li>
+                        <li><a href="#" id="signup-btn">SignUp</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+    </header>    
+
+    <div class="movies-ctg">
+        <div class="ctg-1">
+            <button class="btn">All</button>
+            <button class="btn">Action</button>
+            <button class="btn">Adventure</button>
+            <button class="btn">Biography</button>
+            <button class="btn">Crime</button>
+            <button class="btn">Comedy</button>
+            <button class="btn">Drama</button>
+            <button class="btn">Fantasy</button>
+            <button class="btn">Historical</button>
+            <button class="btn">Horror</button>
+            <button class="btn">Musical</button>
+            <button class="btn">Sci-Fi</button>
+            <button class="btn">Sport</button>
+            <button class="btn">Thriller</button>
+        </div>
+        <div class="img-container">
+                
+        </div>
+    </div>
+     <!--Slider Container-->
+        <div class="slider-container">
+             <!--Slider Content-->
+              <!--New Releases-->
+            <div class="slider-content">
+                <h1>#Top Releases</h1>
+            </div>
+            <div class="owl-container">
+                <div class="owl-carousel owl-theme">
+                    <div class="cards">
+                        <div class="card-img" data-genre="horror">
+                            <img src="../Images/Movies/Quiet Place.jpeg" alt="Quiet Place Img">
+                            <div class="img-title">
+                                <h4>8.1</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>A Quiet Place: Day One</h3>
+                            <p> Horror/Sci-fi</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Movies/BorderLands.jpeg" alt="BorderLands Img">
+                            <div class="img-title">
+                                <h4>6.2</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Borderlands</h3>
+                            <p>Thriller, Comedy, Action </p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Movies/One Life.jpg" alt="One Life Img">
+                            <div class="img-title">
+                                <h4>7.6</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>One Life</h3>
+                            <p> History, Drama, Biography, War</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Movies/The Strangers.jpeg" alt="The Strangers Img">
+                            <div class="img-title">
+                                <h4>7.8</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>The Strangers: Chapter 1</h3>
+                            <p>Thriller, Horror</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Movies/Twisters.jpg" alt="Twisters Img">
+                            <div class="img-title">
+                                <h4>6.8</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Twisters</h3>
+                            <p>Drama, Action, Adventure</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Movies/I.S.S" alt="I.S.S Img">
+                            <div class="img-title">
+                                <h4>5.8</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>I.S.S</h3>
+                            <p>Thriller, Science Fiction</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Movies/Ghost Busters.jpeg" alt="Ghost Busters">
+                            <div class="img-title">
+                                <h4>6.1</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Ghostbusters</h3>
+                            <p>Fantasy, Adventure, Comedy</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Movies/Skywalkers.jpeg" alt="Skywalkers Img">
+                            <div class="img-title">
+                                <h4>7.2</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Skywalkers</h3>
+                            <p>Thriller, Romance, Documentary</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Movies/Despicable Me 4.jpeg" alt="Despicable Me Img">
+                            <div class="img-title">
+                                <h4>6.4</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Despicable Me 4</h3>
+                            <p>Comedy, Action, Animation, Adventure</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Movies/Extraction 2.jpg" alt="Extraction 2 Img">
+                            <div class="img-title">
+                                <h4>7.0</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Extraction 2 </h3>
+                            <p>Action, Thriller</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Movies/Trap.jpg" alt="Trap Img">
+                            <div class="img-title">
+                                <h4>6.6</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Trap</h3>
+                            <p>Thriller, Horror, Mystery, Crime</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Movies/Deadpool Wolverine.jpg" alt="Strange Img">
+                            <div class="img-title">
+                                <h4>6.9</h4>
+                                <p>IMDb</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Deadpool & Wolverine</h3>
+                            <p>Comedy, Action, Science Fiction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+        <!--Category Wise Buttons-->
+        <div class="movies">
+            <div class="movies-title">
+                <h1>#Movies</h1>
+            </div>
+            <div class="movies-card">
+                <div class="cards">
+                    <div class="card-img">
+                        <img src="../Images/Movies/3 Days To Kill.jpg" alt="3 Days to kill Img">
+                        <div class="img-title">
+                            <h4>6.2</h4>
+                            <p>FF</p>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3> 3 Days to Kill</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-img">
+                        <img src="../Images/Movies/How to Train Your Dragon.jpg" alt="How to Train Your Dragon Img">
+                        <div class="img-title">
+                            <h4>8.1</h4>
+                            <p>FF</p>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3> How to Train Your Dragon</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-img">
+                        <img src="../Images/Movies/Sherlock Holmes.jpg" alt="Sherlock Holmes Img">
+                        <div class="img-title">
+                            <h4>7.6</h4>
+                            <p>FF</p>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>Sherlock Holmes</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-img">
+                        <img src="../Images/Movies/Taken.jpeg" alt="Taken Img">
+                        <div class="img-title">
+                            <h4>7.7</h4>
+                            <p>FF</p>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>Taken</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-img">
+                        <img src="../Images/Movies/Brick Mansions.jpg" alt="Brick Mansions Img">
+                        <div class="img-title">
+                            <h4>5.6</h4>
+                            <p>FF</p>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>Brick Mansions</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-img">
+                        <img src="../Images/Movies/Grown Ups.jpg" alt="Grown Ups Img">
+                        <div class="img-title">
+                            <h4>6.0</h4>
+                            <p>FF</p>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>Grown Ups</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-img">
+                        <img src="../Images/Movies/Tarzan.jpg" alt="Tarzan Img">
+                        <div class="img-title">
+                            <h4>6.2</h4>
+                            <p>FF</p>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>The Legend of Tarzan</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-img">
+                        <img src="../Images/Movies/Chef.jpeg" alt="Chef Img">
+                        <div class="img-title">
+                            <h4>7.3</h4>
+                            <p>FF</p>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>Chef</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-img">
+                        <img src="../Images/Movies/Interstellar.jpg" alt="Interstellar Img">
+                        <div class="img-title">
+                            <h4>8.7</h4>
+                            <p>FF</p>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>Interstellar</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-img">
+                        <img src="../Images/Movies/The God Father.jpg" alt="The Godfather Img">
+                        <div class="img-title">
+                            <h4>9.2</h4>
+                            <p>FF</p>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>The Godfather</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-img">
+                        <img src="../Images/Movies/Inception.jpg" alt="Inception Img">
+                        <div class="img-title">
+                            <h4>8.8</h4>
+                            <p>FF</p>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>Inception</h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-img">
+                        <img src="../Images/Movies/The Batman.jpg" alt="The Batman Img">
+                        <div class="img-title">
+                            <h4>7.8</h4>
+                            <p>FF</p>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>The Batman</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Anime-->
+        <div class="slider-container">
+            <div class="slider-content">
+                <h1>#Anime</h1>
+            </div>
+            <div class="owl-container">
+                <div class="owl-carousel owl-theme">
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Animated/Toy Story.jpg" alt="Toy Story Img">
+                            <div class="img-title">
+                                <h4>8.3</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3> Toy Story</h3>
+                            <p>Animation, Family, Comedy</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Animated/Cars.jpeg" alt="Cars Img">
+                            <div class="img-title">
+                                <h4>7.2</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3> Cars</h3>
+                            <p>Animation, Action, Sports</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Animated/The Lion King.png" alt="The Lion King Img">
+                            <div class="img-title">
+                                <h4>6.2</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>The Lion King</h3>
+                            <p>Animation,  Adventure, Family</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Animated/IF.jpg" alt="IF Img">
+                            <div class="img-title">
+                                <h4>6.5</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>IF</h3>
+                            <p>Animation, Family, Comedy</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Animated/Moana 1.jpg" alt="Moana 1 Img">
+                            <div class="img-title">
+                                <h4>7.6</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Moana I</h3>
+                            <p>Animation, Musical, Fantasy, Adventure</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Animated/Ratatouille.jpeg" alt="Ratatouille Img">
+                            <div class="img-title">
+                                <h4>8.1</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>. Ratatouille</h3>
+                            <p>Animation, Family, Comedy</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Animated/Up.jpeg" alt="Up Img">
+                            <div class="img-title">
+                                <h4>8.3</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Up</h3>
+                            <p>Animation, Family, Adventure,</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Animated/Zootopia.jpg" alt="Zootopia Img">
+                            <div class="img-title">
+                                <h4>8.0</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Zootopia</h3>
+                            <p>Animation, Family, Comedy</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Animated/Wall E.jpg" alt="Wall E Img">
+                            <div class="img-title">
+                                <h4>8.3</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>WALL-E</h3>
+                            <p>Animation, Family, Sci-Fi</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/Animated/Tangled.jpg" alt="Tangled Img">
+                            <div class="img-title">
+                                <h4>7.7</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Tangled</h3>
+                            <p>Animation, Adventure, Family, Romance</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+    
+    
+        <!--Tv Shows-->
+        <div class="slider-container">
+            <div class="slider-content">
+                <h1>#TV Shows</h1>
+            </div>
+            <div class="owl-container">
+                <div class="owl-carousel owl-theme">
+                    <div class="cards">
+                        <div class="card-img">
+                            <a href="Suits.html"><img src="../Images/TV/Suits.jpg" alt="Suits Img"></a>
+                            <div class="img-title">
+                                <h4>8.4</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Suits</h3>
+                            <p>Legal Drama, Workplace Drama, Comedy</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/TV/Dark.jpg" alt="Dark Img">
+                            <div class="img-title">
+                                <h4>8.7</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Dark</h3>
+                            <p>Thriller, Time Travel, Mind Bending</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/TV/The Rain.jpg" alt="The Rain Img">
+                            <div class="img-title">
+                                <h4>6.3</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>The Rain</h3>
+                            <p>Drama, Sci-Fi, Thriller</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/TV/Peaky Blinders.png" alt="Peaky Blinders Img">
+                            <div class="img-title">
+                                <h4>8.8</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Peaky Blinders</h3>
+                            <p>Gangster, Crime, Drama</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/TV/Money Heist.png" alt="Money Heist Img">
+                            <div class="img-title">
+                                <h4>8.2</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Money Heist</h3>
+                            <p>Thriller, Action, Crime, Drama</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/TV/Breaking Bad.jpg" alt="Breaking Bad Img">
+                            <div class="img-title">
+                                <h4>9.6</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Breaking Bad</h3>
+                            <p>Drug Crime, Drama, Tragedy </p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/TV/Friends.jpg" alt="Friends Img">
+                            <div class="img-title">
+                                <h4>8.9</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Friends</h3>
+                            <p>Feel Good, Comedy, Romance, Drama</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/TV/Stranger Things.jpg" alt="Stranger Things Img">
+                            <div class="img-title">
+                                <h4>8.7</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Stranger Things</h3>
+                            <p>Mystery horror, Supernatural, Fantasy</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/TV/Game of Thrones.jpg" alt="Game of Thrones Img">
+                            <div class="img-title">
+                                <h4>9.2</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>Game of Thrones</h3>
+                            <p>Dark Fantasy, Epic, Drama</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="../Images/TV/The Boys.jpg" alt="The Boys Img">
+                            <div class="img-title">
+                                <h4>8.7</h4>
+                                <p>FF</p>
+                            </div>
+                        </div>
+                        <div class="card-title">
+                            <h3>The Boys</h3>
+                            <p>Dark Comedy, Action, Sci-Fi, Crime</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <footer class="footer">
+            <div>
+                <h4>Privacy Policy</h4>
+                <h4>Cookie Policy</h4>
+                <h4>Terms of Use</h4>
+            </div>
+            <div>
+                <h4>Help Center</h4>
+                <h4>Support</h4>
+                <h4>FAQ</h4>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div class="footer-social">
+                    <i class="fa-brands fa-instagram fa-bounce" style="color: #FFD43B;"></i>
+                    <i class="fa-brands fa-square-twitter fa-bounce" style="color: #FFD43B;"></i>
+                    <i class="fa-brands fa-discord fa-bounce" style="color: #FFD43B;"></i>
+                </div>
+            </div>
+        </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/search.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

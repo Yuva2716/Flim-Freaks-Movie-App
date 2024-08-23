@@ -1,0 +1,125 @@
+// Movie Desc / Data 
+var titles = [
+  
+   { "movie": {
+        "title": "IF",
+        "SubTitle": "Fantasy Comedy Drama",
+        "desc": "A young girl who goes through a difficult experience begins to see everyone's imaginary friends who have been left behind as their real-life friends have grown up.",
+        "videoURL": "",
+    }},
+    {"movie": {
+        "title": "Ghost Busters:Frozen Empire",
+        "subTitle": "Supernatural Comedy Film",
+        "desc": "When the discovery of an ancient artifact unleashes an evil force, Ghost busters new and old must join forces to protect their home and save the world from a second ice age.",
+        "videoURL": "",
+    }},
+
+    {"movie": {
+        "title": "Heart Of Stone",
+        "subTitle": "Spy Action Thriller",
+        "desc": "An intelligence operative for a shadowy global peacekeeping agency races to stop a hacker from stealing its most valuable and dangerous weapon.",
+        "videoURL": "",
+    }},
+
+    {"movie": {
+        "title": "Bad Boys Ride or Die",
+        "subTitle": "Buddy Cop Action Comedy",
+        "desc": "When their late police captain gets linked to drug cartels, wisecracking Miami cops Mike Lowrey and Marcus Burnett embark on a dangerous mission to clear his name.",
+        "videoURL": "",
+    }},
+
+    {"movie": {
+        "title": "American Fiction",
+        "subTitle": " Comedy-Drama",
+        "desc": "A novelist who's fed up with the establishment profiting from Black entertainment uses a pen name to write a book that propels him into the heart of the hypocrisy and madness he claims to disdain.",
+        "videoURL": "",
+    }},
+
+    {"movie": {
+        "title": "Reptile",
+        "subTitle": "Crime Thriller Film",
+        "desc": "Tom Nichols is a hardened New England detective, unflinching in his pursuit of a case where nothing is as it seems and it begins to dismantle the illusions in his own life.",
+        "videoURL": "",
+    }}
+
+    
+];
+
+const nextBtn = document.getElementById('next')
+const prevBtn = document.getElementById('prev')
+const sliderCont1 = document.querySelector('.banner .bannerSwiper')
+const sliderCont2 = document.querySelector('.banner .bannerSwiper .swiper-slide')
+const thumbCont = document.querySelector('.thumbs .thumbnail .moive-poster')
+
+nextBtn.onclick = function (){
+  showSlider('next')
+}
+
+prevBtn.onclick = function(){
+  showSlider('prev')
+}
+
+function showSlider(type){
+   //slider DOM items is the list of all images
+   let sliderItem = sliderCont1.querySelectorAll('.banner .bannerSwiper .swiper-wrapper .swiper-slide')
+   let thumbnailItems = thumbCont.querySelectorAll('.thumbs .thumbnail .moive-poster')
+   let wrapper = sliderCont1.querySelector('.swiper-wrapper');
+   console.log(sliderItem)
+   console.log(thumbnailItems)
+
+   //slide all the images
+   if (type ==='next'){
+    //    sliderCont2.appendChild(sliderItem[0])
+    //    sliderCont2.prepend(sliderItem[sliderItem.length-1])
+    wrapper.appendChild(sliderItem[0]);
+        console.log(sliderCont1)
+       thumbCont.appendChild(thumbnailItems[0])
+    //    sliderCont2.classList.add('next')
+
+   }else if (type ==='prev'){
+    //    sliderCont2.prepend(sliderItem[sliderItem.length-1])
+    //    console.log(sliderCont2)
+       thumbCont.prepend(thumbnailItems[thumbnailItems.length-1])
+        wrapper.prepend(sliderItem[sliderItem.length - 1]);
+   }
+}
+
+
+
+
+// Show Overlay 
+// Get elements
+const trailerButton = document.getElementById('trailerButton');
+const overlay = document.getElementById('overlay');
+const closeButton = document.getElementById('closeButton');
+const trailerVideo = document.getElementById('trailerVideo');
+const videoCont = document.querySelector('.video-container')
+
+// Open the overlay when the trailer button is clicked
+trailerButton.addEventListener('click', () => {
+    overlay.style.display = 'inline';
+    closeButton.style.display = "inline";
+    videoCont.style.display = 'inline';
+    videoCont.style.transition = "opacity 0.5s ease";
+
+});
+
+// Close the overlay when the close button is clicked
+closeButton.addEventListener('click', () => {
+    overlay.style.display = 'none';
+    closeButton.style.display = "none";
+    videoCont.style.display = 'none';
+
+
+    // Stop the video by reloading the iframe
+    trailerVideo.src = trailerVideo.src;
+});
+
+
+// Prevent scrolling when the overlay is active
+// document.addEventListener('scroll', (event) => {
+//     if (overlay.style.display === 'flex') {
+//         event.preventDefault();
+//         window.scrollTo(0, 0);
+//     }
+// });
